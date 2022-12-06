@@ -1,0 +1,400 @@
+/*genral */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.a-header:hover {
+    background: rgb(156, 153, 153);
+    /* margin-top: 10px;
+    margin-bottom: 10px; */box-shadow: 5px 5px 50px teal;
+    
+}
+.a-header2:hover {
+    background: #fff;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    color: #000;
+}
+.a-header3{
+    
+    
+    color: rgb(0, 128, 75);
+    
+ 
+}
+.a-header3:hover{
+    color: blue;
+letter-spacing: 1.6px;
+font-size: 20px;
+}
+.p-drop-up{
+    position:sticky;
+    top: 500px;
+    left: 50px;
+    bottom: 200px;
+    
+    z-index: 20;
+    }
+    .p-drop-up a{
+        text-decoration: none;
+        color: teal;
+        font-weight: bolder;
+        font-size: 50px;
+    }
+/*=============
+header section
+===============*/
+/* html{
+    height: 10000px;
+} */
+header {
+    
+    display: flex;
+    
+    background: #000;
+    color: #fff;
+   /* position: fixed; */
+   width: 100%;
+   justify-content: space-between;
+position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.a-header{
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+.a-header2{
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+.fa-search {
+   position: relative;
+   top: 14px;
+   right: 0;
+}
+.logo {
+    background: #009688;
+}
+/* .drop:after{
+    content:"";
+    display: block;/*عشان العنصر (a) in line*/
+    /* height: 3px;
+    background: royalblue;
+    transition: width .5s;
+    color: red;
+} */ 
+ .parent-link {
+    background: #fff;
+    width: 130px; 
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    /* position: absolute; */
+    margin-left: 365px;
+     visibility: hidden; 
+} 
+/* display: none; */
+.drop:hover+ .parent-link a{
+     visibility: visible;
+    background:#000;
+    color:#fff;
+}
+ /* display: block; */
+/*=============
+image
+===============*/
+
+.main-image {
+    width: 100%;
+    height: 563px;
+}
+.learn{
+    color: #fff;
+    background: #000;
+    position: relative;
+    bottom: 75px;
+    left: 20px;
+font-size: 30px;
+}
+.learn:hover{
+    background: teal;
+}
+    
+/*  ============
+    team section 
+    ============*/
+.team-title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 5px 5px 25px teal;
+}
+.team-desc{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 17px;    
+}
+.flex{
+    display: inline-block;
+    margin: 50px 45px;
+}
+.team{
+ width: 100%;
+}
+.img-team{
+border-radius: 50%;
+text-align: center; 
+}
+.img-team:hover{
+    /* opacity: .7; */
+    box-shadow: 5px 5px 50px teal;
+}
+.team-img-title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*=============
+  work section
+  ============= */
+
+.gray{
+    margin-top: 30px;
+    padding: 40px 0;
+    background: #333333;
+    justify-content: space-around;
+    height: 480px;
+}
+.gray-content{
+    margin-top: 30px;
+
+    display: flex;
+}
+  .our-work{
+width: 21%;
+color: #fff;
+line-height: 24px;
+margin-left: 10px;
+
+}
+.our-work h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.our-work p{
+    margin-left: 7px;
+    font-size: 13px;
+    line-height: 1.9;
+}
+.white{
+    background: #fff;
+    height: 360px;
+    width: 190px;
+    height: 420px;
+margin-left: 15px;
+box-shadow: 5px 5px 20px rgb(97, 69, 69);
+}
+.snow{
+    width: 100%;
+    height: 160px;
+}
+.white h3, .white p{
+    padding-left: 12px;
+    line-height: 30px;
+
+}
+.white h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.white p{
+    font-size: 16px;
+    line-height: 35px;
+}
+
+/*=============
+pricing section
+===============*/
+.pricing{
+
+text-align: center;
+margin-top: 90px;
+
+}
+.pricing h1{
+    font-size: 30px; 
+    box-shadow: 5px 5px 25px teal;
+}
+.pricing p{
+    margin-top: 15px;
+}
+.basic{
+    border: gray solid rgb(211, 206, 206);
+    width: 32%;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+.basic:hover{
+   box-shadow: 5px 5px 25px teal;
+}
+.basic h4{
+    background: #000;
+    color: #fff;
+    padding: 32px 0;
+    font-size: 25px;
+}
+.basic p{
+    border: rgb(211, 206, 206) solid 1px;
+    padding: 27px 0;
+
+}
+.sign-up{
+    background: teal;
+    margin: 10px;
+  padding: 12px 30px;
+}
+.parent-of-basic{
+    display: flex;
+    justify-content: space-around;
+}
+/*================
+contact-us section
+==================*/
+.form{
+background: rgb(236, 236, 236);
+margin-top: 100px;
+padding: 60px 0; 
+}
+.contact-us h1{
+border-bottom:5px solid teal ;
+display: inline-block;
+font-size: 23px;
+}
+.contact-us p{
+    font-size: 18px;
+    line-height: 45px;
+    margin-top: 10px;
+}
+.fa-map-marker-alt{
+color: teal;
+}
+.fa-phone-alt{
+    color: teal;
+}
+.fa-envelope{
+    color: teal;
+}
+.contact-us{
+    /* border:2px solid red ; */
+    width: 40%;
+    
+    line-height: 40px;
+    padding-left: 20px;
+    margin-top: 25px;
+}
+
+
+.text-contact{
+border: none;
+border-bottom: 1.5px solid rgb(221, 218, 218);
+width: 96%;
+height: 35px;
+margin-left: 7px;
+
+
+}
+.btn-send{
+    padding: 10px 15px ;
+    border: none;
+    background: #000;
+    color: #fff;
+    position: absolute; ;
+    right: 10px;
+   bottom: 25px;
+}
+form{
+    box-shadow: 5px 5px 16px teal ;
+    padding: 35px 20px;
+    position: relative;
+    width: 52%;
+    line-height: 20px;
+    background: #fff; 
+}
+.form{
+    display: flex;
+}
+.check-contact{
+width: 23px;
+height: 23px;
+position: relative;
+bottom: -20px;
+}
+label{
+   line-height: 50px;
+   padding-left: 10px;
+}
+.like-lab{
+    position: relative;
+bottom: -15px;
+font-size: 18px;
+}
+/*===========
+image section
+=============*/
+.footer-img-1{
+    width: 100%;
+    filter: grayscale(60%);
+}
+/*============
+footer section
+==============*/
+footer{
+    margin-top: -5px;
+background: #000;
+padding: 40px 0;
+height: 150px;
+
+}
+footer p{
+    text-align: center;
+    margin-bottom: 20px;
+font-size: 25px;
+color: #fff;
+}
+/* i{
+    background: teal;
+color: #fff;
+width: 15px;
+height: 15px;
+padding: 5px;
+margin-left: 5px;
+text-align: center
+} */
+.main-icon{
+    display: flex;
+justify-content: center;
+        
+}
+.main-icon div{
+   background: teal;
+    color: #fff;
+    padding:8px 16px;
+    margin-left: 5px;
+
+}
+.main-icon div:hover{
+    background: rgb(204, 202, 202);
+}
+.end{
+  margin-top: 20px;  
+}
